@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <style>.loaded { opacity: 1 }</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ostapwkit</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <script defer="defer" src="js/main.min.js"></script>
+</head>
+
+<link rel="stylesheet" href="/src/scss/libs/swiper.scss">
+<link ref="stylesheet" href="..src/scss/style.css">
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__container">
+    <section class="section header__contacts">
+      <p class="header__location">Ukraine, Lviv</p>
+      <p class="header__phones">+38 093 984 20 48, +38 096 852 61 26</p>
+      <ul class="header__social--list">
+        <li><a class="header__social" href="https://www.instagram.com">instagram</a></li>
+        <li><a class="header__social" href="https://telegram.org">telegram</a></li>
+        <li><a class="header__social" href="https://www.whatsapp.com">whatsapp</a></li>
+      </ul>
+    </section>
+  
+    <section class="section header__block">
+      <a href="#" class="logo header__logo">ostapw<span class="logo logo__yellow">kit</span>
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link">Про компанію</a></li>
+          <li><a href="#" class="nav__link">Переваги</a></li>
+          <li><a href="#" class="nav__link">Новини</a></li>
+          <li><a href="#" class="nav__link">Статті</a></li>
+          <li><a href="#" class="nav__link">Контакти</a></li>
+          <li>
+            <input class="nav__input" type="type" placeholder="Пошук...">
+            <button class="header__search">
+              <p class="header__search--button">search</p>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    
+  </div>
+</header>
+
+
+    <main class="page">
+      <section class="main__section hero__box">
+        <div class="hero__container">
+          <h1 class="hero__title--yellow">
+            Це професійний макет <br>
+            <span class="hero__title"> для вашого сайту.</span>
+          </h1>
+          <p class="hero__description">
+            Це професійний макет для вашого сайту. <br> Тут ви можете коротко
+            описати, що пропонує ваша компанія.</p>
+          <ul class="hero__buttons">
+            <li><button class="hero__bttn1" type="button">Детальніше</button></li>
+            <li><button class="hero__bttn2" type="button">Замовити консультацію</button></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main__section choose">
+        <div class="choose__container">
+          <h1 class="choose__title">
+            Чому потрібно вибрати саме нас?</h1>
+          <p class="stripe"></p>
+          <h2 class="choose__desc">
+            Мета нашої компанії - скоротити витрати, збільшити обороти та
+            прибутковість вашого бізнесу. Для цього ми вивчаємо бізнес-процеси
+            компанії, аналізуємо їх та шукаємо вузькі місця. Потім пропонуємо
+            рішення, яке забезпечить економічний чи організаційний ефект.
+          </h2>
+        </div>
+        <ul class="choose__vars">
+          <li class="choose__service service">
+            <div class="choose__circle">
+              <img class="choose__svg" src="images/SVG/delivery-truck.svg">
+            </div>
+            <p class="service__title">Доставка до дверей</p>
+            <p class="service__desc">
+              Безкоштовно доставляємо замовлення від 3 000 по всій країні.
+            </p>
+          </li>
+          <li class="choose__service service">
+            <div class="choose__circle">
+              <img class="choose__svg" src="images/SVG/shopping-cart.svg">
+            </div>
+            <p class="service__title">Лояльність</p>
+            <p class="service__desc">
+              Додамо подарунок на кожне <br> замовлення від 1500 ₴
+            </p>
+          </li>
+          <li class="choose__service service">
+            <div class="choose__circle">
+              <img class="choose__svg" src="images/SVG/cards.svg">
+            </div>
+            <p class="service__title">Зручна оплата</p>
+            <p class="service__desc" id="li3">Картою або готівкою</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__section steps">
+        <div class="steps__container">
+          <h1 class="steps__title">Етапи роботи з нами</h1>
+          <p class="stripe"></p>
+          <h2 class="steps__desc">
+            Усього 3 кроки для нашої співпраці
+          </h2>
+
+          <ul class="card steps__cards">
+            <li class="card__box">
+              <div class="card__circle">1</div>
+              <p class="card__title">Заповніть заявку на сайті</p>
+              <button class="card__bttn">Відправити заявку</button>
+            </li>
+            <li class="card__box">
+              <div class="card__circle">2</div>
+              <p class="card__title">Менеджер надішле вам документи</p>
+              <p class="card__desc">Це відбувається протягом 1-2 годин після заявки</p>
+            </li>
+            <li class="card__box">
+              <div class="card__circle">3</div>
+              <p class="card__title">Підписуємо договір</p>
+              <p class="card__desc">Ви підписуєте договір і надсилаєте його нам поштою</p>
+            </li>
+          </ul>
+          <div class="steps__buttons">
+            <ul>
+              <li><img class="steps__svg--f" src="images/SVG/slide-right.svg"></li>
+              <li><img class="steps__svg--s" src="images/SVG/slide-right.svg"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section content">
+        <div class="content__container">
+          <h1 class="content__title">Каталог</h1>
+          <p class="stripe"></p>
+          <ul class="content__filter filter">
+            <li><button class="filter__item--active" type="button">Новинки</button></li>
+            <li><button class="filter__item" type="button">Акції</button></li>
+            <li><button class="filter__item" type="button">Популярні</button></li>
+          </ul>
+          <ul class="content__list">
+            <li class="content__box">
+              <a href="@" class="content__project project">
+                <img src="images/content1.png" alt="book" width="310" height="165">
+
+                <div class="project__details">
+                  <p class="project__category">категорія</p>
+                  <h3 class="project__title">Вже давно відомо, що читабельний
+                    <br> зміст буде заважати зосередит...
+                  </h3>
+                  <p class="project__price">От 7500 ₴</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__box">
+              <a href="@" class="content__project project">
+                <img src="images/content2.png" alt="book" width="310" height="165">
+                <div class="project__details">
+                  <p class="project__category">категорія</p>
+                  <h3 class="project__title">Вже давно відомо, що читабельний
+                    <br> зміст буде заважати зосередит...
+                  </h3>
+                  <p class="project__price">От 7500 ₴</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__box">
+              <a href="@" class="content__project project">
+                <img src="images/content3.png" alt="book" width="310" height="165">
+                <div class="project__details">
+                  <p class="project__category">категорія</p>
+                  <h3 class="project__title">Вже давно відомо, що читабельний
+                    <br> зміст буде заважати зосередит...
+                  </h3>
+                  <p class="project__price">От 7500 ₴</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__box">
+              <a href="@" class="content__project project">
+                <img src="images/content4.png" alt="book" width="310" height="165">
+                <div class="project__details">
+                  <p class="project__category">категорія</p>
+                  <h3 class="project__title">Вже давно відомо, що читабельний
+                    <br> зміст буде заважати зосередит...
+                  </h3>
+                  <p class="project__price">От 7500 ₴</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button class="content__all--bttn" type="button">Дивитись все</button>
+        </div>
+      </section>
+
+      <section class="main__section feedback">
+        <div class="feedback__container">
+          <div class="feedback__box">
+            <img src="images/work.png" alt="People are working" witdh="649" height="753">
+            <div class="feedback__workspace">
+              <h3 class="feedback__title">Зворотній звязок</h3>
+              <p class="feedback__stripe"></p>
+              <p class="feedback__description">Введіть номер телефону і ми передзвонимо Вам у робочий час <br>
+                (пн-пт 06:00-18:00)</p>
+                <div class="feedback__form">
+                  <form onsubmit="sendEmail(); reset(); return false;">
+                  <div class="feedback__input--box">
+                    <input type="text" required placeholder="Ваше ім'я" id="name" onclick="this.placeholder = ''" onblur='this.placeholder = "Ваше імя"'>
+                  </div>
+                  <div class="feedback__input--box">
+                    <input type="email" required placeholder="E-mail" id="email" onclick="this.placeholder = ''" onblur="this.placeholder = 'E-mail'">
+                  </div>
+                  <div class="feedback__input--box">
+                    <input class="feed__input" required type="number" id="number" placeholder="Ваш телефон" onclick="this.placeholder = ''" onblur="this.placeholder = 'Ваш телефон'">
+                  </div>
+                  <div class="feedback__license license">
+                    <label class="license__checkbox--label">
+                      Я підтверджую, що ознайомлений із Політикою обробки
+                      персональних даних та приймаю умови Політики.
+                      <input class="license__checkbox" type="checkbox">
+                      <span class="checkmark">
+                      </span>
+                    </label>
+                  </div>
+                  <button class="feedback__form--button" type="submit">Замовити дзвінок</button>
+                </form>
+              </div>
+              <script src="https://smtpjs.com/v3/smtp.js"></script>
+              <script>
+                function sendEmail() {
+                  
+                    var userName = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var phone = document.getElementById('number').value;
+
+                    var messageBody = "Ім'я: " + userName +
+                    "     Пошта: " + email +
+                    "     Телефон: " + phone;
+
+                    Email.send({
+
+                        Host : "smtp.elasticemail.com",
+                        Username : "1337marshal1337@gmail.com",
+                        Password : "03043B9940C761A9959203E61E956BAA5DC4",
+                        To : '1337marshal1337@gmail.com',
+                        From : "1337marshal1337@gmail.com",
+                        Subject : " ",
+                        Body : messageBody
+                    }).then(
+                      message => alert(message)
+                    );
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="main__section question">
+        <div class="question__container">
+          <h1 class="question__title">Поширені запитання</h1>
+          <p class="stripe"></p>
+          <h2 class="question__desc">
+            Тут ви знайдете відповіді на найчастіші запитання</h2>
+
+          <div accordion>
+            <div class="accordion">
+  <div class="accordion__item">
+    <div class="accordion__header">Основні тенденції розвитку ринку?</div>
+    <div class="accordion__content">
+      <p>Мета нашої компанії - скоротити витрати, збільшити обороти
+        та прибутковість вашого бізнесу. Для цього ми вивчаємо 
+        бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
+        Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
+    </div>
+  </div>
+
+  <div class="accordion__item">
+    <div class="accordion__header">Основні тенденції розвитку ринку?</div>
+    <div class="accordion__content">
+      <p>Мета нашої компанії - скоротити витрати, збільшити обороти
+        та прибутковість вашого бізнесу. Для цього ми вивчаємо 
+        бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
+        Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
+    </div>
+  </div>
+
+  <div class="accordion__item">
+    <div class="accordion__header">Основні тенденції розвитку ринку?</div>
+    <div class="accordion__content">
+      <p>Мета нашої компанії - скоротити витрати, збільшити обороти
+        та прибутковість вашого бізнесу. Для цього ми вивчаємо 
+        бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
+        Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
+    </div>
+  </div>
+
+  <div class="accordion__item">
+    <div class="accordion__header">Основні тенденції розвитку ринку?</div>
+    <div class="accordion__content">
+      <p>Мета нашої компанії - скоротити витрати, збільшити обороти
+        та прибутковість вашого бізнесу. Для цього ми вивчаємо 
+        бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
+        Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
+    </div>
+  </div>
+
+  <div class="accordion__item">
+    <div class="accordion__header">Основні тенденції розвитку ринку?</div>
+    <div class="accordion__content">
+      <p>Мета нашої компанії - скоротити витрати, збільшити обороти
+        та прибутковість вашого бізнесу. Для цього ми вивчаємо 
+        бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
+        Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div class="look question__watch">
+            <button class="look__button" type="button">Дивитись все</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section company">
+        <div class="company__container">
+          <div class="company__box">
+            <img src="images/company.png" alt="People are working" witdh="640" height="654">
+            <div class="company__workspace">
+              <h3 class="company__title">Про компанію</h3>
+              <p class="feedback__stripe"></p>
+              <ul class="company__list">
+                <li>
+                  <p class="company__desc">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається,
+                    заважає зосередитися. Lorem Ipsum використовують тому, що той забезпечує більш менш стандартне
+                    заповнення шаблону </p>
+                </li>
+                <li>
+                  <p class="company__desc">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається,
+                    заважає зосередитися. Lorem Ipsum використовують тому, що той забезпечує більш менш стандартне
+                    заповнення шаблону </p>
+                </li>
+                <li>
+                  <p class="company__desc">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається,
+                    заважає зосередитися. Lorem Ipsum використовують тому, що той забезпечує більш менш стандартне
+                    заповнення шаблону </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="achievement company__picture">
+            <ul class="achievement__list">
+              <li class="achievement__item">
+                <p class="achievement__more">більше</p>
+                <img class="achievement__rome" src="images/SVG/golden.svg">
+                <p class="achievement__number">287</p>
+                <p class="achievement__desc">Років успішної роботи та співпраці</p>
+              </li>
+              <li class="achievement__item">
+                <p class="achievement__more">більше</p>
+                <img class="achievement__rome" src="images/SVG/golden.svg">
+                <p class="achievement__number">287</p>
+                <p class="achievement__desc">Років успішної роботи та співпраці</p>
+              </li>
+              <li class="achievement__item">
+                <p class="achievement__more">більше</p>
+                <img class="achievement__rome" src="images/SVG/golden.svg">
+                <p class="achievement__number">287</p>
+                <p class="achievement__desc">Років успішної роботи та співпраці</p>
+              </li>
+            </ul>
+          </div>
+      </div></section>
+
+      <section class="main__section swiper">
+        <div class="swiper_container">
+          <h1 class="swiper__title">Маємо 125+ задоволених клієнтів <br> та виконаних проектів</h1>
+          <p class="stripe"></p>
+          <h2 class="swiper__desc">Реальні відгуки від наших клієнтів</h2>
+
+          <div class="swiper-container">
+            <div class="gradient"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <p class="swiper__date">12/01/2023</p>
+                  <h3 class="swiper__name">Відгук від Володимира К.</h3>
+                  <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
+                    що той забезпечує більш менш стандартне заповнення шаблону</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <p class="swiper__date">12/01/2023</p>
+                  <h3 class="swiper__name">Відгук від Володимира К.</h3>
+                  <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
+                    що той забезпечує більш менш стандартне заповнення шаблону</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <p class="swiper__date">12/01/2023</p>
+                  <h3 class="swiper__name">Відгук від Володимира К.</h3>
+                  <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
+                    що той забезпечує більш менш стандартне заповнення шаблону</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <p class="swiper__date">12/01/2023</p>
+                  <h3 class="swiper__name">Відгук від Володимира К.</h3>
+                  <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
+                    що той забезпечує більш менш стандартне заповнення шаблону</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <p class="swiper__date">12/01/2023</p>
+                  <h3 class="swiper__name">Відгук від Володимира К.</h3>
+                  <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
+                    що той забезпечує більш менш стандартне заповнення шаблону</p>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="swiper-button-prev">
+              <div class="swiper-circle"></div>
+            </div>
+            <div class="swiper-button-next">
+              <div class="swiper-circle"></div>
+            </div>
+          </div>
+          
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+              });
+            </script>
+
+          <div class="look swiper__watch">
+            <button class="look__button" type="button">Дивитись все</button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="main__section communication">
+        <div class="communication__container">
+          <h1 class="communication__title">Зв'яжіться з нами</h1>
+          <p class="stripe"></p>
+          <p class="communication__desc">Зручним для вас способом</p>
+          <div class="communication__list list">
+            <ul class="list__grid">
+              <li class="list__item">
+                <div class="list__circle">1</div>
+                <div class="list__text">
+                  <h1 class="list__title">Адреса</h1>
+                  <p class="list__desc">Країна, місто, Назва вулиці, 32</p>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="list__circle">2</div>
+                <div class="list__text">
+                  <h1 class="list__title">Телефони</h1>
+                  <p class="list__desc">+38 093 984 20 48 +38 096 852 61 26</p>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="list__circle">3</div>
+                <div class="list__text">
+                  <h1 class="list__title">Час роботи</h1>
+                  <p class="list__desc">пн-пт 08:00-19:00 сб-нд Вихідні</p>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="list__circle">4</div>
+                <div class="list__text">
+                  <h1 class="list__title">Інтрернет пошта</h1>
+                  <p class="list__desc">procombiz@gmail.com</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__separator">
+      <section class="footer__links">
+      <div class="footer__logo--ux">
+        <a href="#" class="footer__logo--logo">ostapwkit</a>
+        <p class="footer__ux">UI/UX design</p>
+      </div>
+      <div class="footer__catalogue">
+        <ul>
+          <li><a class="footer__links" href="#">Про компанію</a></li>
+          <li><a class="footer__links" href="#">Каталог</a></li>
+          <li><a class="footer__links" href="#">Питання та відповіді</a></li>
+          <li><a class="footer__links" href="#">Новини</a></li>
+        </ul>
+        <ul>
+          <li><a class="footer__links" href="#">Статті та огляди</a></li>
+          <li><a class="footer__links" href="#">Контакти</a></li>
+        </ul>
+        <ul>
+          <li><p class="footer__text--address">Україна, Lviv <br> з 8:00 до 21:00 (без вихідних)</p></li>
+          <li><a class="footer__links" href="mailto:procombiz@gmail.com">procombiz@gmail.com</a></li>
+        </ul>
+        <ul>
+          <li><a class="footer__links" href="tel:+380939842048">+38 093 984 20 48</a></li>
+          <li><a class="footer__links" href="tel:+380968526126">+38 096 852 61 26</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="footer__low">
+      <p class="footer__line"></p>
+        <div class="bottom footer__content">
+          <ul class="bottom__list">
+            <li class="bottom__item"><p class="bottom__text--year">© 2011–2023</p>
+            </li>
+            <li class="bottom__item"><a class="bottom__links" href="#">Правила сайту</a>
+            </li>
+            <li class="bottom__item"><p class="bottom__text">Shtay O.</p>
+            </li>
+            <li class="bottom__item">
+              <a class="bottom__cards" href="https://www.visa.com.ua/uk_UA">
+              <img class="bottom__svg--visa" src="images/SVG/visa.svg"></a>
+            </li>
+            <li class="bottom__item">
+              <a class="bottom__cards" href="https://www.mastercard.ua/uk-ua.html">
+                <img class="bottom__svg--visa" src="images/SVG/mastercard.svg"></a>
+            </li>
+          </ul>
+      </div>
+    </section>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <div class="popup" data-popup="popup-1" data-close-overlay>
+    <div class="popup__wrapper" data-close-overlay>
+        <div class="popup__content">
+            <button class="button-close popup__close" type="button">x</button>
+            <div class="popup__body">
+                <h2>Базовый пример модального окна</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

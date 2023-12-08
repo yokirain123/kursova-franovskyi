@@ -1,0 +1,26 @@
+:root {
+  --bs-font-family: "ProbaPro", sans-serif;
+  --bs-font-size: 18px;
+  --bs-font-weight: 400;
+  --bs-line-height: 1;
+  --bs-font-color: #222;
+  --bs-transition: .3s ease-in-out;
+  --bs-radius: 10px;
+  --primary-hover-color: #2d2d2d;
+  --background-color: #f8f4f4;
+  --white-color: #fff;
+  --black-color: #131313;
+  --primary-color: #373D43;
+  --secondary-text: #889099;
+  --logo-yellow: #FBDD37;
+  --yellow-hover: #FFD301;
+  --stripe-color: #797F85;
+  --tr-button-color: #EDF1F7;
+  --footer-bg: #52565A;
+  --footer-text: #C4CBD2;
+  --bttn-hover-color: #7A8189;
+  --bs-shadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
+  --hover-shadow: 0 0 5px 0 rgba(#000, 10%),
+                  0 0 10px 0 rgba(#000, 10%),
+                  0 0 15px 0 rgba(#000, 10%);
+}/*# sourceMappingURL=vars.css.map */
