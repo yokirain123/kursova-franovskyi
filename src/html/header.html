@@ -1,35 +1,40 @@
 <header class="header">
-  <div class="header__container">
-    <section class="header__contacts section">
-      <p class="header__location">Ukraine, Lviv</p>
-      <p class="header__phones">+38 093 984 20 48, +38 096 852 61 26</p>
-      <ul class="header__social--list">
-        <li><a class="header__social" href='https://www.instagram.com'>instagram</a></li>
-        <li><a class="header__social" href='https://telegram.org'>telegram</a></li>
-        <li><a class="header__social" href="https://www.whatsapp.com">whatsapp</a></li>
-      </ul>
-    </section>
-  
-    <section class="header__block section">
-      <a href="#" class="header__logo logo"
-        >ostapw<span class="logo__yellow logo">kit</span>
+    <div class="header__contacts">
+      <div class="header__container">
+        <p class="header__location">Ukraine, Lviv</p>
+        <ul class="header__phones">
+          <li><a href="tel:+380939842048" class="header__phone">+38 093 984 20 48</a></li>
+          <li><a class="header__phone" href="tel:+380939842048">+38 093 984 20 48</a></li>
+        </ul>
+        <ul class="header__social--list">
+          <li><a class="header__social" href='https://www.instagram.com'>instagram</a></li>
+          <li><a class="header__social" href='https://telegram.org'>telegram</a></li>
+          <li><a class="header__social" href="https://www.whatsapp.com">whatsapp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__block">
+      <div class="header__container">
+        <a href="#" class="header__logo logo">
+        ostapw<span class="logo__yellow logo">kit</span>
       </a>
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li><a href='#' class="nav__link">Про компанію</a></li>
-          <li><a href='#' class="nav__link">Переваги</a></li>
-          <li><a href='#' class="nav__link">Новини</a></li>
-          <li><a href='#' class="nav__link">Статті</a></li>
-          <li><a href='#' class="nav__link">Контакти</a></li>
-          <li>
-            <input class="nav__input" type="type" placeholder="Пошук..." />
-            <button class="header__search">
-              <p class="header__search--button">search</p>
-            </button>
-          </li>
+          <li><a href='#about-company' class="nav__link">Про компанію</a></li>
+          <li><a href='#pros' class="nav__link">Переваги</a></li>
+          <li><a href='#news' class="nav__link">Новини</a></li>
+          <li><a href='#slider' class="nav__link">Статті</a></li>
+          <li><a href='#contacts' class="nav__link">Контакти</a></li>
         </ul>
       </nav>
-    </section>
+      <form action="" class="search-bar">
+        <input name="search" type="search" pattern=".*\S.*" required placeholder="Пошук..." />
+            <button class="search-btn" type="submit">
+              <span>Search</span>
+            </button>
+      </form>
+      
+      </div>
+    </div>
     <!-- @@include('./iconMenu.html', {}) -->
-  </div>
 </header>

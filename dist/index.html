@@ -8,49 +8,55 @@
   <title>ostapwkit</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.min.css?_v=20231214125219">
 
-  <script defer="defer" src="js/main.min.js"></script>
+  <script defer="defer" src="js/main.min.js?_v=20231214125219"></script>
 </head>
 
-<link rel="stylesheet" href="/src/scss/libs/swiper.scss">
+<link rel="stylesheet" href="/src/scss/libs/swiper.scss?_v=20231214125219">
 <link ref="stylesheet" href="..src/scss/style.css">
 
 <body>
   <div class="wrapper">
     <header class="header">
-  <div class="header__container">
-    <section class="section header__contacts">
-      <p class="header__location">Ukraine, Lviv</p>
-      <p class="header__phones">+38 093 984 20 48, +38 096 852 61 26</p>
-      <ul class="header__social--list">
-        <li><a class="header__social" href="https://www.instagram.com">instagram</a></li>
-        <li><a class="header__social" href="https://telegram.org">telegram</a></li>
-        <li><a class="header__social" href="https://www.whatsapp.com">whatsapp</a></li>
-      </ul>
-    </section>
-  
-    <section class="section header__block">
-      <a href="#" class="logo header__logo">ostapw<span class="logo logo__yellow">kit</span>
+    <div class="header__contacts">
+      <div class="header__container">
+        <p class="header__location">Ukraine, Lviv</p>
+        <ul class="header__phones">
+          <li><a href="tel:+380939842048" class="header__phone">+38 093 984 20 48</a></li>
+          <li><a class="header__phone" href="tel:+380939842048">+38 093 984 20 48</a></li>
+        </ul>
+        <ul class="header__social--list">
+          <li><a class="header__social" href="https://www.instagram.com">instagram</a></li>
+          <li><a class="header__social" href="https://telegram.org">telegram</a></li>
+          <li><a class="header__social" href="https://www.whatsapp.com">whatsapp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__block">
+      <div class="header__container">
+        <a href="#" class="logo header__logo">
+        ostapw<span class="logo logo__yellow">kit</span>
       </a>
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li><a href="#" class="nav__link">Про компанію</a></li>
-          <li><a href="#" class="nav__link">Переваги</a></li>
-          <li><a href="#" class="nav__link">Новини</a></li>
-          <li><a href="#" class="nav__link">Статті</a></li>
-          <li><a href="#" class="nav__link">Контакти</a></li>
-          <li>
-            <input class="nav__input" type="type" placeholder="Пошук...">
-            <button class="header__search">
-              <p class="header__search--button">search</p>
-            </button>
-          </li>
+          <li><a href="#about-company" class="nav__link">Про компанію</a></li>
+          <li><a href="#pros" class="nav__link">Переваги</a></li>
+          <li><a href="#news" class="nav__link">Новини</a></li>
+          <li><a href="#slider" class="nav__link">Статті</a></li>
+          <li><a href="#contacts" class="nav__link">Контакти</a></li>
         </ul>
       </nav>
-    </section>
+      <form action="" class="search-bar">
+        <input name="search" type="search" pattern=".*\S.*" required placeholder="Пошук...">
+            <button class="search-btn" type="submit">
+              <span>Search</span>
+            </button>
+      </form>
+      
+      </div>
+    </div>
     
-  </div>
 </header>
 
 
@@ -71,24 +77,22 @@
         </div>
       </section>
 
-      <section class="main__section choose">
+      <section class="main__section choose" id="pros">
         <div class="choose__container">
-          <h1 class="choose__title">
-            Чому потрібно вибрати саме нас?</h1>
-          <p class="stripe"></p>
-          <h2 class="choose__desc">
+          <h2 class="choose__title">
+            Чому потрібно вибрати саме нас?</h2>
+          <p class="choose__desc">
             Мета нашої компанії - скоротити витрати, збільшити обороти та
             прибутковість вашого бізнесу. Для цього ми вивчаємо бізнес-процеси
             компанії, аналізуємо їх та шукаємо вузькі місця. Потім пропонуємо
             рішення, яке забезпечить економічний чи організаційний ефект.
-          </h2>
-        </div>
+          </p>
         <ul class="choose__vars">
           <li class="choose__service service">
             <div class="choose__circle">
-              <img class="choose__svg" src="images/SVG/delivery-truck.svg">
+              <img src="images/SVG/delivery-truck.svg" alt="">
             </div>
-            <p class="service__title">Доставка до дверей</p>
+            <h3 class="service__title">Доставка до дверей</h3>
             <p class="service__desc">
               Безкоштовно доставляємо замовлення від 3 000 по всій країні.
             </p>
@@ -97,7 +101,7 @@
             <div class="choose__circle">
               <img class="choose__svg" src="images/SVG/shopping-cart.svg">
             </div>
-            <p class="service__title">Лояльність</p>
+            <h3 class="service__title">Лояльність</h3>
             <p class="service__desc">
               Додамо подарунок на кожне <br> замовлення від 1500 ₴
             </p>
@@ -106,34 +110,34 @@
             <div class="choose__circle">
               <img class="choose__svg" src="images/SVG/cards.svg">
             </div>
-            <p class="service__title">Зручна оплата</p>
+            <h3 class="service__title">Зручна оплата</h3>
             <p class="service__desc" id="li3">Картою або готівкою</p>
           </li>
         </ul>
+      </div>
       </section>
 
       <section class="main__section steps">
         <div class="steps__container">
-          <h1 class="steps__title">Етапи роботи з нами</h1>
-          <p class="stripe"></p>
-          <h2 class="steps__desc">
+          <h2 class="steps__title">Етапи роботи з нами</h2>
+          <p class="steps__desc">
             Усього 3 кроки для нашої співпраці
-          </h2>
+          </p>
 
           <ul class="card steps__cards">
             <li class="card__box">
               <div class="card__circle">1</div>
-              <p class="card__title">Заповніть заявку на сайті</p>
+              <h3 class="card__title">Заповніть заявку на сайті</h3>
               <button class="card__bttn">Відправити заявку</button>
             </li>
             <li class="card__box">
               <div class="card__circle">2</div>
-              <p class="card__title">Менеджер надішле вам документи</p>
+              <h3 class="card__title">Менеджер надішле вам документи</h3>
               <p class="card__desc">Це відбувається протягом 1-2 годин після заявки</p>
             </li>
             <li class="card__box">
               <div class="card__circle">3</div>
-              <p class="card__title">Підписуємо договір</p>
+              <h3 class="card__title">Підписуємо договір</h3>
               <p class="card__desc">Ви підписуєте договір і надсилаєте його нам поштою</p>
             </li>
           </ul>
@@ -148,8 +152,7 @@
 
       <section class="main__section content">
         <div class="content__container">
-          <h1 class="content__title">Каталог</h1>
-          <p class="stripe"></p>
+          <h2 class="content__title">Каталог</h2>
           <ul class="content__filter filter">
             <li><button class="filter__item--active" type="button">Новинки</button></li>
             <li><button class="filter__item" type="button">Акції</button></li>
@@ -158,49 +161,49 @@
           <ul class="content__list">
             <li class="content__box">
               <a href="@" class="content__project project">
-                <img src="images/content1.png" alt="book" width="310" height="165">
+                <picture><source srcset="images/content1.webp" type="image/webp"><img src="images/content1.png" alt="book" width="310" height="165"></picture>
 
                 <div class="project__details">
                   <p class="project__category">категорія</p>
-                  <h3 class="project__title">Вже давно відомо, що читабельний
+                  <p class="project__title">Вже давно відомо, що читабельний
                     <br> зміст буде заважати зосередит...
-                  </h3>
+                  </p>
                   <p class="project__price">От 7500 ₴</p>
                 </div>
               </a>
             </li>
             <li class="content__box">
               <a href="@" class="content__project project">
-                <img src="images/content2.png" alt="book" width="310" height="165">
+                <picture><source srcset="images/content2.webp" type="image/webp"><img src="images/content2.png" alt="book" width="310" height="165"></picture>
                 <div class="project__details">
                   <p class="project__category">категорія</p>
-                  <h3 class="project__title">Вже давно відомо, що читабельний
+                  <p class="project__title">Вже давно відомо, що читабельний
                     <br> зміст буде заважати зосередит...
-                  </h3>
+                  </p>
                   <p class="project__price">От 7500 ₴</p>
                 </div>
               </a>
             </li>
             <li class="content__box">
               <a href="@" class="content__project project">
-                <img src="images/content3.png" alt="book" width="310" height="165">
+                <picture><source srcset="images/content3.webp" type="image/webp"><img src="images/content3.png" alt="book" width="310" height="165"></picture>
                 <div class="project__details">
                   <p class="project__category">категорія</p>
-                  <h3 class="project__title">Вже давно відомо, що читабельний
+                  <p class="project__title">Вже давно відомо, що читабельний
                     <br> зміст буде заважати зосередит...
-                  </h3>
+                  </p>
                   <p class="project__price">От 7500 ₴</p>
                 </div>
               </a>
             </li>
             <li class="content__box">
               <a href="@" class="content__project project">
-                <img src="images/content4.png" alt="book" width="310" height="165">
+                <picture><source srcset="images/content4.webp" type="image/webp"><img src="images/content4.png" alt="book" width="310" height="165"></picture>
                 <div class="project__details">
                   <p class="project__category">категорія</p>
-                  <h3 class="project__title">Вже давно відомо, що читабельний
+                  <p class="project__title">Вже давно відомо, що читабельний
                     <br> зміст буде заважати зосередит...
-                  </h3>
+                  </p>
                   <p class="project__price">От 7500 ₴</p>
                 </div>
               </a>
@@ -213,10 +216,9 @@
       <section class="main__section feedback">
         <div class="feedback__container">
           <div class="feedback__box">
-            <img src="images/work.png" alt="People are working" witdh="649" height="753">
+            <picture><source srcset="images/work.webp" type="image/webp"><img src="images/work.png" alt="People are working" witdh="649" height="753"></picture>
             <div class="feedback__workspace">
-              <h3 class="feedback__title">Зворотній звязок</h3>
-              <p class="feedback__stripe"></p>
+              <h2 class="feedback__title--start">Зворотній звязок</h2>
               <p class="feedback__description">Введіть номер телефону і ми передзвонимо Вам у робочий час <br>
                 (пн-пт 06:00-18:00)</p>
                 <div class="feedback__form">
@@ -242,7 +244,7 @@
                   <button class="feedback__form--button" type="submit">Замовити дзвінок</button>
                 </form>
               </div>
-              <script src="https://smtpjs.com/v3/smtp.js"></script>
+              <script src="https://smtpjs.com/v3/smtp.js?_v=20231214125219"></script>
               <script>
                 function sendEmail() {
                   
@@ -274,80 +276,83 @@
       </section>
 
 
-      <section class="main__section question">
+      <section class="main__section question" id="news">
         <div class="question__container">
-          <h1 class="question__title">Поширені запитання</h1>
-          <p class="stripe"></p>
-          <h2 class="question__desc">
-            Тут ви знайдете відповіді на найчастіші запитання</h2>
+          <h2 class="question__title">Поширені запитання</h2>
+          <p class="question__desc">
+            Тут ви знайдете відповіді на найчастіші запитання</p>
 
-          <div accordion>
             <div class="accordion">
-  <div class="accordion__item">
-    <div class="accordion__header">Основні тенденції розвитку ринку?</div>
-    <div class="accordion__content">
-      <p>Мета нашої компанії - скоротити витрати, збільшити обороти
-        та прибутковість вашого бізнесу. Для цього ми вивчаємо 
-        бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
-        Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
-    </div>
-  </div>
-
-  <div class="accordion__item">
-    <div class="accordion__header">Основні тенденції розвитку ринку?</div>
-    <div class="accordion__content">
-      <p>Мета нашої компанії - скоротити витрати, збільшити обороти
-        та прибутковість вашого бізнесу. Для цього ми вивчаємо 
-        бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
-        Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
-    </div>
-  </div>
-
-  <div class="accordion__item">
-    <div class="accordion__header">Основні тенденції розвитку ринку?</div>
-    <div class="accordion__content">
-      <p>Мета нашої компанії - скоротити витрати, збільшити обороти
-        та прибутковість вашого бізнесу. Для цього ми вивчаємо 
-        бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
-        Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
-    </div>
-  </div>
-
-  <div class="accordion__item">
-    <div class="accordion__header">Основні тенденції розвитку ринку?</div>
-    <div class="accordion__content">
-      <p>Мета нашої компанії - скоротити витрати, збільшити обороти
-        та прибутковість вашого бізнесу. Для цього ми вивчаємо 
-        бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
-        Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
-    </div>
-  </div>
-
-  <div class="accordion__item">
-    <div class="accordion__header">Основні тенденції розвитку ринку?</div>
-    <div class="accordion__content">
-      <p>Мета нашої компанії - скоротити витрати, збільшити обороти
-        та прибутковість вашого бізнесу. Для цього ми вивчаємо 
-        бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
-        Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
-    </div>
-  </div>
-</div>
-
-          </div>
+  <ul>
+    <li>
+      <div class="accordion__item">
+        <div class="accordion__header">Основні тенденції розвитку ринку?</div>
+        <div class="accordion__content">
+          <p>Мета нашої компанії - скоротити витрати, збільшити обороти
+            та прибутковість вашого бізнесу. Для цього ми вивчаємо 
+            бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
+            Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="accordion__item">
+        <div class="accordion__header">Основні тенденції розвитку ринку?</div>
+        <div class="accordion__content">
+          <p>Мета нашої компанії - скоротити витрати, збільшити обороти
+            та прибутковість вашого бізнесу. Для цього ми вивчаємо 
+            бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
+            Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="accordion__item">
+        <div class="accordion__header">Основні тенденції розвитку ринку?</div>
+        <div class="accordion__content">
+          <p>Мета нашої компанії - скоротити витрати, збільшити обороти
+            та прибутковість вашого бізнесу. Для цього ми вивчаємо 
+            бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
+            Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="accordion__item">
+        <div class="accordion__header">Основні тенденції розвитку ринку?</div>
+        <div class="accordion__content">
+          <p>Мета нашої компанії - скоротити витрати, збільшити обороти
+            та прибутковість вашого бізнесу. Для цього ми вивчаємо 
+            бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
+            Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="accordion__item">
+        <div class="accordion__header">Основні тенденції розвитку ринку?</div>
+        <div class="accordion__content">
+          <p>Мета нашої компанії - скоротити витрати, збільшити обороти
+            та прибутковість вашого бізнесу. Для цього ми вивчаємо 
+            бізнес-процеси компанії, аналізуємо їх та шукаємо вузькі місця. 
+            Потім пропонуємо рішення, яке забезпечить економічний чи організаційний ефект.</p>
+        </div>
+      </div>
+    </li></ul></div>
+    
+  
           <div class="look question__watch">
             <button class="look__button" type="button">Дивитись все</button>
           </div>
         </div>
       </section>
 
-      <section class="main__section company">
+      <section class="main__section company" id="about-company">
         <div class="company__container">
           <div class="company__box">
-            <img src="images/company.png" alt="People are working" witdh="640" height="654">
+            <picture><source srcset="images/company.webp" type="image/webp"><img src="images/company.png" alt="People are working" witdh="640" height="654"></picture>
             <div class="company__workspace">
-              <h3 class="company__title">Про компанію</h3>
-              <p class="feedback__stripe"></p>
+              <h2 class="company__title--start">Про компанію</h2>
               <ul class="company__list">
                 <li>
                   <p class="company__desc">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається,
@@ -367,35 +372,38 @@
               </ul>
             </div>
           </div>
-          <div class="achievement company__picture">
-            <ul class="achievement__list">
-              <li class="achievement__item">
-                <p class="achievement__more">більше</p>
-                <img class="achievement__rome" src="images/SVG/golden.svg">
-                <p class="achievement__number">287</p>
-                <p class="achievement__desc">Років успішної роботи та співпраці</p>
-              </li>
-              <li class="achievement__item">
-                <p class="achievement__more">більше</p>
-                <img class="achievement__rome" src="images/SVG/golden.svg">
-                <p class="achievement__number">287</p>
-                <p class="achievement__desc">Років успішної роботи та співпраці</p>
-              </li>
-              <li class="achievement__item">
-                <p class="achievement__more">більше</p>
-                <img class="achievement__rome" src="images/SVG/golden.svg">
-                <p class="achievement__number">287</p>
-                <p class="achievement__desc">Років успішної роботи та співпраці</p>
-              </li>
-            </ul>
+        </div></section>
+        <section class="main__section achievement">
+          <div class="achievement__container">
+            <div class="achievement__picture">
+              <ul class="achievement__list">
+                <li class="achievement__item">
+                  <p class="achievement__more">більше</p>
+                  <img class="achievement__rome" src="images/SVG/golden.svg">
+                  <p class="achievement__number">287</p>
+                  <p class="achievement__desc">Років успішної роботи та співпраці</p>
+                </li>
+                <li class="achievement__item">
+                  <p class="achievement__more">більше</p>
+                  <img class="achievement__rome" src="images/SVG/golden.svg">
+                  <p class="achievement__number">287</p>
+                  <p class="achievement__desc">Років успішної роботи та співпраці</p>
+                </li>
+                <li class="achievement__item">
+                  <p class="achievement__more">більше</p>
+                  <img class="achievement__rome" src="images/SVG/golden.svg">
+                  <p class="achievement__number">287</p>
+                  <p class="achievement__desc">Років успішної роботи та співпраці</p>
+                </li>
+              </ul>
+            </div>
           </div>
-      </div></section>
+      </section>
 
-      <section class="main__section swiper">
+      <section class="main__section swiper" id="slider">
         <div class="swiper_container">
-          <h1 class="swiper__title">Маємо 125+ задоволених клієнтів <br> та виконаних проектів</h1>
-          <p class="stripe"></p>
-          <h2 class="swiper__desc">Реальні відгуки від наших клієнтів</h2>
+          <h2 class="swiper__title">Маємо 125+ задоволених клієнтів <br> та виконаних проектів</h2>
+          <p class="swiper__desc">Реальні відгуки від наших клієнтів</p>
 
           <div class="swiper-container">
             <div class="gradient"></div>
@@ -451,9 +459,9 @@
             </div>
           </div>
           
-          <!-- Swiper JS -->
-          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-            <!-- Initialize Swiper -->
+          
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20231214125219"></script>
+            
             <script>
               var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 3,
@@ -473,38 +481,37 @@
         </div>
       </section>
 
-      <section class="main__section communication">
+      <section class="main__section communication" id="contacts">
         <div class="communication__container">
-          <h1 class="communication__title">Зв'яжіться з нами</h1>
-          <p class="stripe"></p>
+          <h2 class="communication__title">Зв'яжіться з нами</h2>
           <p class="communication__desc">Зручним для вас способом</p>
           <div class="communication__list list">
             <ul class="list__grid">
               <li class="list__item">
                 <div class="list__circle">1</div>
                 <div class="list__text">
-                  <h1 class="list__title">Адреса</h1>
-                  <p class="list__desc">Країна, місто, Назва вулиці, 32</p>
+                  <h3 class="list__title">Адреса</h3>
+                  <p class="list__desc">Країна, місто, <br> Назва вулиці, 32</p>
                 </div>
               </li>
               <li class="list__item">
                 <div class="list__circle">2</div>
                 <div class="list__text">
-                  <h1 class="list__title">Телефони</h1>
-                  <p class="list__desc">+38 093 984 20 48 +38 096 852 61 26</p>
+                  <h3 class="list__title">Телефони</h3>
+                  <p class="list__desc">+38 093 984 20 48 <br> +38 096 852 61 26</p>
                 </div>
               </li>
               <li class="list__item">
                 <div class="list__circle">3</div>
                 <div class="list__text">
-                  <h1 class="list__title">Час роботи</h1>
-                  <p class="list__desc">пн-пт 08:00-19:00 сб-нд Вихідні</p>
+                  <h3 class="list__title">Час роботи</h3>
+                  <p class="list__desc">пн-пт 08:00-19:00 <br> сб-нд Вихідні</p>
                 </div>
               </li>
               <li class="list__item">
                 <div class="list__circle">4</div>
                 <div class="list__text">
-                  <h1 class="list__title">Інтрернет пошта</h1>
+                  <h3 class="list__title">Інтрернет пошта</h3>
                   <p class="list__desc">procombiz@gmail.com</p>
                 </div>
               </li>
@@ -516,8 +523,7 @@
 
     <footer class="footer">
   <div class="footer__container">
-    <div class="footer__separator">
-      <section class="footer__links">
+      <section class="footer__links--content">
       <div class="footer__logo--ux">
         <a href="#" class="footer__logo--logo">ostapwkit</a>
         <p class="footer__ux">UI/UX design</p>
@@ -544,7 +550,6 @@
       </div>
     </section>
     <section class="footer__low">
-      <p class="footer__line"></p>
         <div class="bottom footer__content">
           <ul class="bottom__list">
             <li class="bottom__item"><p class="bottom__text--year">© 2011–2023</p>
@@ -564,7 +569,6 @@
           </ul>
       </div>
     </section>
-    </div>
   </div>
 </footer>
   </div>

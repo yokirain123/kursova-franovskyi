@@ -14,7 +14,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 import BaseHelpers from './helpers/BaseHelpers';
 import PopupManager from './modules/PopupManager';
 import BurgerMenu from './modules/BurgerMenu';
-import Tabs from './modules/Tabs';
+// import Tabs from './modules/Tabs';
 import Accordion from './modules/Accordion';
 
 BaseHelpers.checkWebpSupport();
@@ -52,11 +52,11 @@ new BurgerMenu().init();
  * */
 // new MousePRLX();
 
-new Tabs('tabs-example', {
-	onChange: (data) => {
-		console.log(data);
-	},
-});
+// new Tabs('tabs-example', {
+// 	onChange: (data) => {
+// 		console.log(data);
+// 	},
+// });
 
 new Accordion('.accordion', {
 	shouldOpenAll: false, // true

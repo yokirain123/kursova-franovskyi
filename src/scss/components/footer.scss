@@ -15,8 +15,9 @@
   }
 }
   .footer {
-    &__links {
+    &__links--content {
       display: flex;
+      margin-bottom: 50px;
     }
     &__logo--ux {
     display: flex;
@@ -60,12 +61,7 @@
     &__low {
       display: flex;
       flex-direction: column;
-    }
-    &__line {
-      margin-top: 69px;
-      height: 1px;
-      width: 100%;
-      border-bottom: 1px solid #EEEEEE1A;
+      border-top: 1px solid #EEEEEE1A;
     }
   }
   .bottom {
