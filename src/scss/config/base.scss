@@ -80,6 +80,7 @@
     padding-top: 147px;
   }
   &__title--yellow {
+    padding: 0 40% 0 0;
     color: var(--logo-yellow);
     font-size: 70px;
     font-weight: 700;
@@ -224,30 +225,27 @@
     margin-bottom: 44px;
   }
   &__cards {
+    height: 274px;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
-    position: relative;
   }
+  
   &__buttons {
     filter: grayscale(100%) brightness(0.99);
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(-250%);
   }
   &__svg--f {
-    position: absolute;
     width: 67px;
     height: 67px;
-    top: -160px;
-    right: 64%;
-    left: auto;
+
   }
   &__svg--s {
-    position: absolute;
     width: 67px;
     height: 67px;
-    top: -160px;
-    right: 30.5%;
-    left: auto;
   }
 }
 .card {
@@ -257,10 +255,22 @@
     border-radius: 4px;
     width: 100%;
     height: 100%;
-    padding: 30px 0;
+    padding: 30px 20px;
     align-items: center;
     flex-direction: column;
     gap: 10px;
+  }
+  &__box--pos {
+    display: flex;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
   }
   &__circle {
     display: flex;
@@ -282,14 +292,12 @@
     background-color: var(--logo-yellow);
     width: 189px;
     height: 47px;
-    margin: 23px;
+    margin-top: 23px;
     font-size: 20px;
     color: var(--primary-color);
   }
   &__desc {
-    // max-width: 257px;
-    // margin: 23px;
-    padding: 29px;
+    margin-top: 23px;
     color: var(--secondary-text);
     text-align: center;
     justify-content: center;
@@ -313,6 +321,7 @@
     display: flex;
     gap: 11px;
     justify-content: center;
+    margin-bottom: 30px;
   }
   &__list {
     display: flex;
@@ -354,7 +363,6 @@
       font-size: 18px;
       background-color: var(--background-color);
       width: 100px;
-      margin-bottom: 30px;
       transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__item:hover,
@@ -376,20 +384,21 @@
   }
   .project {
     &__details {
-      margin: 25px 21px 32px 21px;
+      padding: 25px 21px 32px;
     }
-    & img {
+    &__title {
+      margin: 21px 0;
+    }
+    img {
       display: block;
     }
     &__category {
       text-transform: uppercase;
       color: #c4cbd2;
       line-height: 20.93px;
-      padding-bottom: 21px;
       font-size: 14px;
     }
     &__price {
-      padding-top: 18px;
       line-height: 26.91px;
     }
   }
@@ -430,7 +439,7 @@
     margin-bottom: 33px;
     font-size: 16px;
   }
-  &__input--box input {
+  input {
     line-height: 26.91px;
     margin-bottom: 20px;
     background: var(--tr-button-color);
@@ -561,10 +570,10 @@
     border-radius: 12px;
     display: flex;
     background-color: var(--white-color);
-    justify-content: center;
+    align-items: center;
   }
   &__workspace {
-    padding: 20px 57px;
+    padding: 71px 80px;
   }
   &__workspace h3,
   p,
@@ -575,7 +584,6 @@
   }
   &__title--start {
     text-align: start;
-    margin-top: 51px;
     font-size: 38px;
   }
   &__title--start::after {
@@ -592,7 +600,6 @@
     word-wrap: break-word;
   }
   &__list {
-    width: 499px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -606,17 +613,17 @@
     width: 100%;
     border-radius: 12px;
     background-image: url(../images/company__picture.png);
-    position: relative;
   }
   &__list {
     display: flex;
     flex-direction: row;
-    gap: 265px;
+    justify-content: space-between;
   }
   &__item {
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
   }
   &__more {
     font-size: 14px;
@@ -655,7 +662,6 @@
   }
   &__title {
     text-align: center;
-    margin-top: 51px;
     font-size: 38px;
   }
   &__title::after {

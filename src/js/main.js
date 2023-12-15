@@ -63,3 +63,11 @@ new Accordion('.accordion', {
 	defaultOpen: [], // [0,1]
 	collapsedClass: 'open',
 });
+
+var swiper = new Swiper(".mySwiper", {
+	loop: true,
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+  });

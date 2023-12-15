@@ -13,6 +13,8 @@
   &__container {
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
 
     .header-is-sticky & {
       height: rem($headerHeight - 50);
@@ -31,9 +33,6 @@
     max-height: 50px;
     align-items: center;
   }
-  &__nav {
-    margin: 0 310px;
-  }
   &__location {
     display: flex;
     font-size: 18px;
@@ -43,7 +42,6 @@
     display: flex;
     gap: 20px;
     align-items: center;
-    margin: 0 300px;
   }
   &__phone:hover, &__phone:focus {
     color: var(--logo-yellow);
@@ -136,12 +134,8 @@
 }
 .search-bar {
   display: flex;
-	margin: auto;
-	padding: 0 2em;
 	justify-content: center;
-	max-width: 20em;
-  position: absolute;
-  left: 70%;
+	max-width: 15em;
 }
 .search-bar input {
 	background: transparent;
