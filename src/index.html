@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', { 'title': 'ostapwkit' })
-<link ref="stylesheet" href="..src/scss/style.css">
+<!-- <link ref="stylesheet" href="..src/scss/style.css"> -->
 
 <body>
   <div class="wrapper">
@@ -99,9 +99,9 @@
         <div class='content__container'>
           <h2 class="content__title">Каталог</h2>
           <ul class="content__filter filter">
-            <li><button class="filter__item--active" type="button">Новинки</a></li>
-            <li><button class="filter__item" type="button">Акції</a></li>
-            <li><button class="filter__item" type="button">Популярні</a></li>
+            <li><button class="filter__item--active" type="button">Новинки</button></li>
+            <li><button class="filter__item" type="button">Акції</button></li>
+            <li><button class="filter__item" type="button">Популярні</button></li>
           </ul>
           <ul class="content__list">
             <li class="content__box">
@@ -279,70 +279,65 @@
       </section>
 
       <section class="reviews main__section" id="slider">
+        <div class="container">
           <h2 class="swiper__title">Маємо 125+ задоволених клієнтів  та виконаних проектів</h2>
           <p class="swiper__desc">Реальні відгуки від наших клієнтів</p>
-
-          <div class="swiper-container">
-            <div class="swiper" id="reviews-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="swiper__item">
-                    <p class="swiper__date">12/01/2023</p>
-                    <h3 class="swiper__name">Відгук від Володимира К.</h3>
-                    <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
-                      що той забезпечує більш менш стандартне заповнення шаблону</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper__item">
-                    <p class="swiper__date">12/01/2023</p>
-                    <h3 class="swiper__name">Відгук від Володимира К.</h3>
-                    <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
-                      що той забезпечує більш менш стандартне заповнення шаблону</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper__item">
-                    <p class="swiper__date">12/01/2023</p>
-                    <h3 class="swiper__name">Відгук від Володимира К.</h3>
-                    <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
-                      що той забезпечує більш менш стандартне заповнення шаблону</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper__item">
-                    <p class="swiper__date">12/01/2023</p>
-                    <h3 class="swiper__name">Відгук від Володимира К.</h3>
-                    <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
-                      що той забезпечує більш менш стандартне заповнення шаблону</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper__item">
-                    <p class="swiper__date">12/01/2023</p>
-                    <h3 class="swiper__name">Відгук від Володимира К.</h3>
-                    <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
-                      що той забезпечує більш менш стандартне заповнення шаблону</p>
-                  </div>
+          <div class="swiper" id="reviews-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <p class="swiper__date">12/01/2023</p>
+                  <h3 class="swiper__name">Відгук від Володимира К.</h3>
+                  <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
+                    що той забезпечує більш менш стандартне заповнення шаблону</p>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <p class="swiper__date">12/01/2023</p>
+                  <h3 class="swiper__name">Відгук від Володимира К.</h3>
+                  <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
+                    що той забезпечує більш менш стандартне заповнення шаблону</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <p class="swiper__date">12/01/2023</p>
+                  <h3 class="swiper__name">Відгук від Володимира К.</h3>
+                  <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
+                    що той забезпечує більш менш стандартне заповнення шаблону</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <p class="swiper__date">12/01/2023</p>
+                  <h3 class="swiper__name">Відгук від Володимира К.</h3>
+                  <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
+                    що той забезпечує більш менш стандартне заповнення шаблону</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <p class="swiper__date">12/01/2023</p>
+                  <h3 class="swiper__name">Відгук від Володимира К.</h3>
+                  <p class="swiper__respond">Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum використовують тому, 
+                    що той забезпечує більш менш стандартне заповнення шаблону</p>
+                </div>
+              </div>
+            </div>
             <div class="swiper-button-prev">
-              <div class="swiper__circle"></div>
+              <!-- <div class="swiper__circle"></div> -->
             </div>
             <div class="swiper-button-next">
-              <div class="swiper-circle"></div>
+              <!-- <div class="swiper__circle"></div> -->
             </div>
-          </div>
-            
-            
-          
-          <!-- Swiper JS -->
-         
-          <div class="swiper__watch look">
-            <button class="look__button" type="button">Дивитись все</button>
-          </div>
-
+          </div>  
         </div>
+        <div class="swiper__watch look">
+          <button class="look__button" type="button">Дивитись все</button>
+        </div>
+        </div>
+          
       </section>
 
       <section class="communication main__section" id="contacts">

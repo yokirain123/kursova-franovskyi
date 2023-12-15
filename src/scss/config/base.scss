@@ -653,6 +653,31 @@
   }
 }
 
+.reviews {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .swiper {
+    overflow: visible;
+    max-width: 640px;
+  }
+
+  .swiper-button-prev {
+
+  }
+
+  .swiper-button-next {
+
+  }
+}
+
+.swiper-container {
+  // max-width: 640px;
+}
+
 .swiper {
   &__container {
     padding: 0;

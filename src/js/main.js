@@ -11,6 +11,8 @@
 
 import Swiper, { Navigation, Pagination } from 'swiper';
 
+// import 'swiper/css/bundle';
+
 import BaseHelpers from './helpers/BaseHelpers';
 import PopupManager from './modules/PopupManager';
 import BurgerMenu from './modules/BurgerMenu';
@@ -65,6 +67,8 @@ new Accordion('.accordion', {
 });
 
 let reviewSwiper = new Swiper("#reviews-swiper", {
+	modules: [ Navigation ],
+
 	initialSlide: 1,
 	slidesPerView: 1,
 	spaceBetween: 30,
@@ -73,4 +77,5 @@ let reviewSwiper = new Swiper("#reviews-swiper", {
 	  nextEl: ".swiper-button-next",
 	  prevEl: ".swiper-button-prev",
 	},
+
   });
