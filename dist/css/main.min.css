@@ -1144,8 +1144,7 @@ a, input, button, h1, h2, h3, p {
 }
 .communication .list__grid {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
   padding-bottom: 95px;
 }
 .communication .list__circle {
@@ -1161,7 +1160,7 @@ a, input, button, h1, h2, h3, p {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding: 8px 35px;
+  padding: 0 25px;
 }
 .communication .list__item {
   display: flex;

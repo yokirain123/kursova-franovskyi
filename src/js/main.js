@@ -64,7 +64,10 @@ new Accordion('.accordion', {
 	collapsedClass: 'open',
 });
 
-var swiper = new Swiper(".mySwiper", {
+let reviewSwiper = new Swiper("#reviews-swiper", {
+	initialSlide: 1,
+	slidesPerView: 1,
+	spaceBetween: 30,
 	loop: true,
 	navigation: {
 	  nextEl: ".swiper-button-next",
