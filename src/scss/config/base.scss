@@ -613,6 +613,8 @@
     width: 100%;
     border-radius: 12px;
     background-image: url(../images/company__picture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &__list {
     display: flex;
@@ -632,8 +634,8 @@
     color: var(--logo-yellow);
   }
   &__number {
-    top: 30%;
-    transform: translate(69%, 10%);
+    right: 20%;
+    transform: translate(-50%, 50%);
     left: auto;
     font-size: 48px;
     font-weight: 700;
@@ -642,14 +644,12 @@
     position: absolute;
   }
   &__desc {
-    margin-top: 60px;
+    padding-top: 15px;
     color: var(--white-color);
     line-height: 26.91px;
   }
   &__rome {
     height: 57px;
-    position: absolute;
-    margin: 15px 0;
   }
 }
 
@@ -700,6 +700,10 @@
   &__respond {
     line-height: 26.91px;
     overflow: hidden;
+  }
+  &__circle {
+    background-color: var(--logo-yellow);
+    border-radius: 50%;
   }
   &__watch {
     display: flex;

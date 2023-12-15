@@ -1015,6 +1015,8 @@ a, input, button, h1, h2, h3, p {
   width: 100%;
   border-radius: 12px;
   background-image: url(../images/company__picture.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .achievement__list {
   display: flex;
@@ -1034,8 +1036,8 @@ a, input, button, h1, h2, h3, p {
   color: var(--logo-yellow);
 }
 .achievement__number {
-  top: 30%;
-  transform: translate(69%, 10%);
+  right: 20%;
+  transform: translate(-50%, 50%);
   left: auto;
   font-size: 48px;
   font-weight: 700;
@@ -1044,14 +1046,12 @@ a, input, button, h1, h2, h3, p {
   position: absolute;
 }
 .achievement__desc {
-  margin-top: 60px;
+  padding-top: 15px;
   color: var(--white-color);
   line-height: 26.91px;
 }
 .achievement__rome {
   height: 57px;
-  position: absolute;
-  margin: 15px 0;
 }
 
 .swiper__container {
@@ -1100,6 +1100,10 @@ a, input, button, h1, h2, h3, p {
 .swiper__respond {
   line-height: 26.91px;
   overflow: hidden;
+}
+.swiper__circle {
+  background-color: var(--logo-yellow);
+  border-radius: 50%;
 }
 .swiper__watch {
   display: flex;
