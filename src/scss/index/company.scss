@@ -1,0 +1,78 @@
+.company {
+  &__box {
+    border-radius: 12px;
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+  }
+  &__workspace {
+    @media screen and (min-width: 320px) {
+      padding: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 50px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 70px;
+    }
+  }
+  &__workspace h3,
+  p,
+  label,
+  input {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title--start {
+    font-size: 38px;
+
+    @media screen and (min-width: 320px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
+  }
+  &__title--start::after {
+    content: '';
+    display: block;
+    background: var(--stripe-color);
+    height: 2px;
+    
+    width: 50px;
+
+    @media screen and (min-width: 320px) {
+      margin: 28px auto 36px;
+    }
+    @media screen and (min-width: 768px) {
+      margin: 28px auto 36px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 28px 0 36px;
+    }
+  }
+  &__desc {
+    line-height: 26.91px;
+    color: var(--secondary-text);
+    word-wrap: break-word;
+  }
+  &__image {
+    @media screen and (min-width: 320px) {
+      display: none
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

@@ -68,7 +68,7 @@ input::-ms-clear {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
+  // -moz-appearance: textfield;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -96,7 +96,7 @@ a {
   }
 
   &:visited {
-    
+    text-decoration: none;
   }
 
   &:hover {

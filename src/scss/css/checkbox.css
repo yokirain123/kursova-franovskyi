@@ -11,9 +11,7 @@
   text-wrap: nowrap;
 }
 .checkbox__input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   position: absolute;
   /* Checked */
   /* Focused */
