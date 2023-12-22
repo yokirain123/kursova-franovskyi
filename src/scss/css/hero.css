@@ -1,0 +1,185 @@
+.hero__box {
+  background-image: url(../images/Union.png);
+  background-size: cover;
+}
+@media screen and (min-width: 320px) {
+  .hero__box {
+    height: 630px;
+    padding: 30px 0 100px 0;
+  }
+}
+@media screen and (min-width: 420px) {
+  .hero__box {
+    height: 650px;
+    padding-top: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__box {
+    height: 720px;
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__box {
+    height: 720px;
+    padding-top: 147px;
+  }
+}
+.hero__title--yellow {
+  color: var(--logo-yellow);
+  font-weight: 700;
+}
+@media screen and (min-width: 320px) {
+  .hero__title--yellow {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title--yellow {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title--yellow {
+    padding: 0 40% 0 0;
+    font-size: 70px;
+    margin-bottom: 10px;
+    line-height: 70px;
+  }
+}
+.hero__title {
+  color: var(--white-color);
+}
+.hero__description {
+  margin-top: 30px;
+  color: #959a9f;
+}
+@media screen and (min-width: 320px) {
+  .hero__description {
+    display: block;
+    font-size: 20px;
+    line-height: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__description {
+    margin: 30px 0;
+    display: block;
+    font-size: 20px;
+    line-height: 35.88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__description {
+    margin-bottom: 84px;
+    display: block;
+    font-size: 24px;
+    line-height: 35.88px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .hero__buttons {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+.hero__bttn1 {
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--logo-yellow);
+}
+@media screen and (min-width: 320px) {
+  .hero__bttn1 {
+    height: 60px;
+    width: 220px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__bttn1 {
+    height: 92px;
+    width: 325px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__bttn1 {
+    padding: 20px 45px;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+  }
+}
+.hero__bttn2 {
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  color: var(--tr-button-color);
+  border: 1px solid var(--tr-button-color);
+}
+@media screen and (min-width: 320px) {
+  .hero__bttn2 {
+    padding: 5px;
+    height: 60px;
+    width: 220px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__bttn2 {
+    height: 92px;
+    width: 450px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__bttn2 {
+    padding: 20px 45px;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+  }
+}
+.hero__bttn1:hover, .herobttn1:focus {
+  background-color: var(--yellow-hover);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero .step_bttn:hover,
+.hero .step_bttn:focus,
+.hero .form_bttn:hover,
+.hero .form_bttn:focus {
+  background-color: var(--yellow-hover);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__bttn2:hover, .hero__bttn2:focus {
+  border-color: var(--logo-yellow);
+  color: var(--logo-yellow);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}/*# sourceMappingURL=hero.css.map */

@@ -45,21 +45,25 @@
       </nav>
       <div class="search">
         <img src="images/SVG/search.svg">
-
-        <!-- <form action="" class="search-bar">
-          <input
-            name="search"
-            type="search"
-            pattern=".*\S.*"
-            required
-            placeholder="Пошук..."
-          />
-          <button class="search-btn" type="submit">
-            <span>Search</span>
-          </button>
-        </form> -->
       </div>
     </div>
+    <button class="mobile_button" type="button" data-menu-button aria-expanded="false">
+      <div class="mobile_button-icon">
+        <img class="mobile_button--close button-close" src="images/SVG/burger-close.svg"></img>
+        <img class="mobile_button--open" src="images/SVG/burger-open.svg"></i>
+      </div>
+    </button>
+  </div>
+  <div class="mobile" data-menu>
+    <nav class="nobile__nav">
+        <ul class="mobile__list">
+          <li><a href="#about-company" class="mobile__link">Про компанію</a></li>
+          <li><a href="#pros" class="mobile__link">Переваги</a></li>
+          <li><a href="#news" class="mobile__link">Новини</a></li>
+          <li><a href="#slider" class="mobile__link">Статті</a></li>
+          <li><a href="#contacts" class="mobile__link">Контакти</a></li>
+        </ul>
+      </nav>
   </div>
   <!-- @@include('./iconMenu.html', {}) -->
 </header>

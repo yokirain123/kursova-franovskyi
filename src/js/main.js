@@ -42,7 +42,6 @@ new PopupManager();
  *  Модуль для работы с меню (Бургер)
  * */
 new BurgerMenu().init();
-
 /**
  *  Библиотека для анимаций
  *  документация: https://michalsnik.github.io/aos
