@@ -55,6 +55,9 @@ body {
   text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  &.no-scroll {
+    overflow: hidden; 
+  }
 }
 
 input,
@@ -96,7 +99,7 @@ a {
   }
 
   &:visited {
-    text-decoration: none;
+    // text-decoration: none;
   }
 
   &:hover {
@@ -131,4 +134,19 @@ sup {
 a, input, button, h1, h2, h3, p {
   color: var(--primary-color);
   text-decoration: none;
+}
+.logo {
+  &__mobile {
+    color: var(--primary-color);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 34px;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+  &__yellow {
+    color: var(--logo-yellow)
+  }
 }

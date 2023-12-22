@@ -1,6 +1,8 @@
 .mobile_button {
-    position: relative;
+    position: absolute;
     padding: 0;
+    right: 0;
+    transform: translate(-20%);
     border: none;
     background-color: transparent;
     z-index: 100;
@@ -17,8 +19,10 @@
         display: none;
     }
   }
-
   .mobile_button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     transition-property: all;
@@ -48,9 +52,10 @@
   .mobile {
     display: flex;
     flex-direction: column;
-  
+    justify-content: space-around;
     position: fixed;
-    background-color: #fff;
+    background-image: url(../images/bg.png);
+    background-size: cover;
     width: 100%;
     height: 100%;
     top: 0;
@@ -69,6 +74,72 @@
     }
     @media (min-width: 1200px) {
         display: none;
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      margin-top: 160px;
+      gap: 30px;
+    }
+    &__list {
+      margin-top: 125px;
+      text-align: center;
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+    }
+    &__link {
+      color: white;
+      text-decoration: underline;
+      text-decoration-color: var(--logo-yellow);
+      text-underline-position: under;
+      font-size: 50px;
+      transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover, &__link:focus {
+      color: var(--logo-yellow);
+      text-decoration: underline;
+      text-underline-position: under;
+      transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__location {
+      color: white;
+      font-size: 30px;
+      text-align: center;
+    }
+    &__phones {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    &__phone {
+      font-size: 22px;
+      color: white;
+      transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__phone:hover, &__phone:focus {
+      color: var(--logo-yellow);
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+    &__social--list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    &__social {
+      color: white;
+      font-size: 22px;
+      text-transform: uppercase;
+      transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__social:hover, &__social:focus {
+      color: var(--logo-yellow);
+      text-decoration: underline;
+      text-underline-position: under;
     }
   }
   

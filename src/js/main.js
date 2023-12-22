@@ -36,7 +36,7 @@ BaseHelpers.headerFixed();
  * На обертку(.popup) окна добавь атрибут '[data-close-overlay]'
  * На кнопку для закрытия окна добавь класс '.button-close'
  * */
-new PopupManager();
+// new PopupManager();
 
 /**
  *  Модуль для работы с меню (Бургер)
@@ -77,4 +77,41 @@ let reviewSwiper = new Swiper("#reviews-swiper", {
 	  prevEl: ".swiper-button-prev",
 	},
 
-  });
+});
+
+// mobile menu 
+const menuBtnRef = document.querySelector('[data-menu-button]');
+const mobileMenuRef = document.querySelector('[data-menu]');
+    
+menuBtnRef.addEventListener('click', () => {
+	const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+	menuBtnRef.classList.toggle('is-open');
+	menuBtnRef.setAttribute('aria-expanded', !expanded);
+	mobileMenuRef.classList.toggle('is-open');
+	document.body.classList.toggle('no-scroll');
+});
+
+
+// filters
+let filterButtons = document.querySelectorAll('.filter__item');
+let projects = document.querySelectorAll('.content__box');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        let textCategory = button.textContent;
+
+        projects.forEach(project => {
+            let projectCategory = project.querySelector('.project__category').textContent;
+
+            if(textCategory === 'Новинки') {
+                project.style.display = 'block';  
+              } else if (textCategory === 'Акції' && projectCategory.includes('Сайт')) {
+                project.style.display = 'block';
+              } else if (textCategory === 'Популярні' && projectCategory.includes('Портфоліо')) {
+                project.style.display = 'block';
+              }else {
+                project.style.display = 'none';
+              }
+        })
+    })
+})

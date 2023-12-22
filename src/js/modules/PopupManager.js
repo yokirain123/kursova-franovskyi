@@ -25,9 +25,9 @@ class PopupManager extends Popup {
     document.addEventListener('click', this.togglePopup.bind(this));
   }
 
-  togglePopup({ mobile }) {
-    if (mobile.closest('[data-type]')) {
-      const popup = this.getPopupBySelector(mobile.dataset.type);
+  togglePopup({ target }) {
+    if (target.closest('[data-type]')) {
+      const popup = this.getPopupBySelector(target.dataset.type);
 
       this.isOpenElements.forEach((modal) => this.closePopup(modal));
       this.openPopup(popup);
@@ -35,10 +35,10 @@ class PopupManager extends Popup {
     }
 
     if (
-      mobile.hasAttribute('data-close-overlay') ||
-      mobile.closest(`.${this.options.buttonCloseName}`)
+      target.hasAttribute('data-close-overlay') ||
+      target.closest(`.${this.options.buttonCloseName}`)
     ) {
-      this.closePopup(mobile.closest('[data-popup]'));
+      this.closePopup(target.closest('[data-popup]'));
       this.toggleBodyLock(false);
     }
   }
