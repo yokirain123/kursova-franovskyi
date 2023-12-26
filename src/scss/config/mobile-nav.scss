@@ -37,6 +37,12 @@
     }
   }
   
+  .mobile_button--close{
+    filter: invert(100%)
+  }
+  .mobile_button--open{
+    fill: black;
+  }
   .mobile_button--close {
     display: none;
   }
