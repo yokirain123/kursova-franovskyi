@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?5i6089');
+  src:  url('fonts/icomoon.eot?5i6089#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5i6089') format('truetype'),
+    url('fonts/icomoon.woff?5i6089') format('woff'),
+    url('fonts/icomoon.svg?5i6089#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-untitled:before {
+  content: "\e90a";
+  color: #edf1f7;
+}
+.icon-yellowbox:before {
+  content: "\e900";
+  color: #fbdd37;
+}
+.icon-mastercard:before {
+  content: "\6d";
+  color: #c4cbd2;
+}
+.icon-slide-left:before {
+  content: "\e901";
+  color: #fbdd37;
+}
+.icon-slide-right:before {
+  content: "\e903";
+  color: #fbdd37;
+}
+.icon-golden:before {
+  content: "\e902";
+  color: #fbdd37;
+}
+.icon-cards:before {
+  content: "\e906";
+  color: #889099;
+}
+.icon-shopping-cart:before {
+  content: "\e907";
+  color: #889099;
+}
+.icon-delivery-truck:before {
+  content: "\e908";
+}
+.icon-search-1:before {
+  content: "\e909";
+}
